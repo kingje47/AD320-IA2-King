@@ -1,10 +1,13 @@
 <html>
 <body>
-
-Name: <?php echo $_GET["Name"]; ?><br>
-Email: <?php echo $_GET["Email"]; ?><br>
-Phone Number: <?php echo $_GET["PhoneNumber"]; ?><br>
-State of Residence: <?php echo $_GET["State"]; ?><br>
-
+<?php echo "<br>Name: " . $_GET["Name"]; ?>
+<?php echo "<br>Email: " . $_GET["Email"]; ?>  
+<?php if ($_GET["PhoneNumber"] != "" ) { 
+    echo "<br>Phone: " . $_GET["PhoneNumber"];
+}?>    
+<?php if ($_GET["State"] != ""){
+    
+    echo "<br>State: " . $_GET["State"];
+}?>
 </body>
 </html>
